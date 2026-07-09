@@ -10,7 +10,8 @@ body{
     background-size: cover;
     background-position: top center;
     border-radius: 30px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    position: relative;
 }
 
 .hero-title-container{
@@ -33,4 +34,57 @@ body{
     display: block;
     font-size: 180px;
     mix-blend-mode: overlay;
+}
+.search-block{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    gap:20px;
+}
+.search-block-left{
+    flex-basis: 50%;
+    position: relative;
+}
+.search-block-right{
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px; /* Separacion entre div y div*/
+}
+input[type=text]{
+    border: 1px solid gray;
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+    border: 0px;
+    font-weight: 600;
+}
+select{
+    border:0px;
+    font-weight: 600;
+}
+label{
+    font-size: 12px;
+}
+.boton-buscar{
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 20px;
 }

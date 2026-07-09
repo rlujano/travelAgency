@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -16,6 +17,29 @@
 <div class="hero">
     <div class="hero-title-container">
         <h1 class="hero-title">Explore the <span class="hero-title-white-text">World</span></h1>
+    </div>
+    <div class="search-block">
+        <div class="search-block-left">
+            <div class="search-block-left-1"><input type="text" placeholder="Search activities or destinations"><button class="boton-buscar"><i class="fas fa-search"></i></button></div>
+        </div>
+        <div class="search-block-right">
+            <div class="ida"><label for="ida">Ida</label><input type="date"></div>
+            <div class="retorno"><label for="">Retorno</label><input type="date"></div>
+            <div class="cant_personas">
+                <label for="">Visitantes</label>
+                <select name="num_personas" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select></div>
+            <div class="tipo_transporte">
+                <label for="">Tipo de Transporte</label>
+                <select name="tipo_transporte" id="">
+                    <option value="aereo">Aereo</option>
+                    <option value="terrestre">Terrestre</option>
+                </select></div>
+        </div>
     </div>
 </div>
     
