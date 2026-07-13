@@ -1,5 +1,5 @@
 body{
-    padding: 30px;
+    padding: 15px;
     font-family: "Roboto", sans-serif;
 }
 
@@ -19,12 +19,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center; 
+    border-radius: 30px;
     background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 30%);
 }
 
 .hero-title{
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     text-transform: uppercase;
     color: white;
     font-weight: 900;
@@ -32,11 +33,12 @@ body{
 
 .hero-title-white-text{
     display: block;
-    font-size: 180px;
+    font-size: 100px;
     mix-blend-mode: overlay;
 }
+
 .search-block{
-    display: flex;
+    display: block;
     position: absolute;
     background-color: white;
     width: 80%;
@@ -55,10 +57,13 @@ body{
 }
 .search-block-right{
     flex-basis: 50%;
-    display: flex;
+    display: grid;
     gap: 20px; /* Separacion entre div y div*/
+    grid-template-columns: 50% 50%;
+    padding: 20px 0 0 0;
     
 }
+
 input[type=text]{
     border: 1px solid gray;
     width: 100%;
@@ -94,6 +99,7 @@ label{
     display: block;
     color: gray;
 }
+
 .boton-buscar{
     background-color: transparent;
     border: 0;
@@ -105,3 +111,56 @@ label{
     font-size: 20px;
     padding: 20px;
 }
+
+
+
+
+@media (min-width: 480px) {
+    
+}
+
+@media (min-width: 768px) {
+    body{
+        padding: 30px;
+    }
+
+    .hero{
+        min-height: 700px;
+    }
+
+    .hero-title{
+        font-size: 50px;
+    }
+
+    .hero-title-white-text{
+        font-size: 140px;
+    }
+
+    .search-block{
+        display: flex;
+    }
+
+    .search-block-right{
+        flex-basis: 50%;
+        display: flex;
+        gap: 20px; /* Separacion entre div y div*/
+        padding: 0 0 0 0;
+        
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .hero-title{
+        font-size: 60px;
+    }
+
+    .hero-title-white-text{
+        font-size: 180px;
+    }
+
+    
+}
+
+
+
