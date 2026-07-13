@@ -11,6 +11,7 @@ header{
     margin-bottom: 10px;
 }
 /* align:center, alinea verticalmente a todos  */
+
 .main-menu-items{
     display: flex;
     justify-content: space-between;
