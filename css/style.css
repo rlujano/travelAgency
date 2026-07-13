@@ -1,8 +1,52 @@
 body{
     padding: 15px;
     font-family: "Roboto", sans-serif;
-}
+    margin: 0;
 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/* align:center, alinea verticalmente a todos  */
+.main-menu-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+    padding-left: 0;
+}
+.main-menu-item a{
+    color: gray;
+    text-decoration: none;
+
+}
+.main-menu-item a:hover{
+    background-color: white ;
+    color:black;
+}
+.btn-book-now{
+    padding: 10px 25px 10px 25px;
+    border-color: #1faffe;
+    background-color:#1faffe ;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px #1faffe solid;
+    font-weight: 600px;
+    transition: all ease-in .2s;
+    
+}
+/* Display:flex, para que aparescan, para que se alinen uno despues del otro. , cuenta los divs*/
+
+.btn-book-now:hover{
+    background-color: #fff;
+    color: #1faffe;
+    border: #1faffe 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
+
+}
 .hero{
     background-image: url('../images/hero.avif');
     height: 80vh;
@@ -121,7 +165,7 @@ label{
 
 @media (min-width: 768px) {
     body{
-        padding: 30px;
+        padding: 20px 30px 30px 30px;
     }
 
     .hero{
