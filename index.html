@@ -1,68 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Agency</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <script src="js/scripts.js"></script>
-</head>
-<body>
-
-<header class="header">
-    <div class="logo"><img src="images/logo.png" alt="Logo de la pagina" height="80px"></div>
-    <!-- alt, texto alternativo-> un braile, describe que contiene la imagen -->
-    <div class="main-menu-container">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo de la pagina" height="80px" />
+      </div>
+      <!-- alt, texto alternativo-> un braile, describe que contiene la imagen -->
+      <div class="main-menu-container">
         <nav class="main-menu">
-            <ul class="main-menu-items">
-                <li class="main-menu-item"><a href="#">Home</a></li>
-                <li class="main-menu-item"><a href="#">About</a></li>
-                <li class="main-menu-item"><a href="#">Packages</a></li>
-                <li class="main-menu-item"><a href="#">Blog</a></li>
-                <li class="main-menu-item"><a href="#">Contact</a></li>
-            </ul>
+          <ul class="main-menu-items">
+            <li class="main-menu-item"><a href="#">Home</a></li>
+            <li class="main-menu-item"><a href="#">About</a></li>
+            <li class="main-menu-item"><a href="#">Packages</a></li>
+            <li class="main-menu-item"><a href="#">Blog</a></li>
+            <li class="main-menu-item"><a href="#">Contact</a></li>
+          </ul>
         </nav>
-    </div>
-    <div class="right-section"><button class="btn-book-now">Reserva Ahora</button></div>
-</header>
-<div class="hero">
-    <div class="hero-title-container">
-        <h1 class="hero-title">Explore the <span class="hero-title-white-text">World</span></h1>
-    </div>
-    <div class="search-block">
+      </div>
+      <div class="right-section">
+        <button class="btn-book-now">Reserva Ahora</button>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-title-container">
+        <h1 class="hero-title">
+          Explore the <span class="hero-title-white-text">World</span>
+        </h1>
+      </div>
+      <div class="search-block">
         <div class="search-block-left">
-            <div class="search-block-left-1"><input type="text" placeholder="Search activities or destinations"><button class="boton-buscar"><i class="fas fa-search"></i></button></div>
+          <div class="search-block-left-1">
+            <input
+              type="text"
+              placeholder="Search activities or destinations"
+            /><button class="boton-buscar">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </div>
         <div class="search-block-right">
-            <div class="ida search-block-item"><label for="ida">Ida</label><input type="date"></div>
-            <div class="retorno search-block-item"><label for="">Retorno</label><input type="date"></div>
-            <div class="cant_personas search-block-item">
-                <label for="">Visitantes</label>
-                <select name="num_personas" id="">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select></div>
-            <div class="tipo_transporte search-block-item">
-                <label for="">Tipo de Transporte</label>
-                <select name="tipo_transporte" id="">
-                    <option value="aereo">Aereo</option>
-                    <option value="terrestre">Terrestre</option>
-                </select></div>
+          <div class="ida search-block-item">
+            <label for="ida">Ida</label><input type="date" />
+          </div>
+          <div class="retorno search-block-item">
+            <label for="">Retorno</label><input type="date" />
+          </div>
+          <div class="cant_personas search-block-item">
+            <label for="">Visitantes</label>
+            <select name="num_personas" id="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="tipo_transporte search-block-item">
+            <label for="">Tipo de Transporte</label>
+            <select name="tipo_transporte" id="">
+              <option value="aereo">Aereo</option>
+              <option value="terrestre">Terrestre</option>
+            </select>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Apuntes Rodolfo Florez -->
-<!-- 
+    tarea sobre Prettier: default formatter: en el editor, considerar Prettier
+    format on save: dejarlo activo
+
+    <!-- Apuntes Rodolfo Florez -->
+    <!-- 
 Extensiones para Visualcode, revisarlas
 
 -->
-
-</body>
+  </body>
 </html>
