@@ -57,6 +57,7 @@ body{
     flex-basis: 50%;
     display: flex;
     gap: 20px; /* Separacion entre div y div*/
+    
 }
 input[type=text]{
     border: 1px solid gray;
@@ -73,9 +74,25 @@ input[type=date]{
 select{
     border:0px;
     font-weight: 600;
+    width: 80%;
+    padding: 2px 15px;
+    background: transparent;
 }
+/* Background lo hace transparente */
 label{
     font-size: 12px;
+}
+.search-block-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 25%;
+}
+/* Los label son por lo general lineales */
+.search-block label{
+    display: block;
+    color: gray;
 }
 .boton-buscar{
     background-color: transparent;
