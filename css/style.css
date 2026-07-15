@@ -1,211 +1,270 @@
-body{
-    padding: 15px;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-
+body {
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 /* align:center, alinea verticalmente a todos  */
 
-.main-menu-items{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    list-style: none;
-    padding-left: 0;
+.main-menu-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  list-style: none;
+  padding-left: 0;
 }
-.main-menu-item a{
-    color: gray;
-    text-decoration: none;
-
+.main-menu-item a {
+  color: gray;
+  text-decoration: none;
 }
-.main-menu-item a:hover{
-    background-color: white ;
-    color:black;
+.main-menu-item a:hover {
+  background-color: white;
+  color: black;
 }
-.btn-book-now{
-    padding: 10px 25px 10px 25px;
-    border-color: #1faffe;
-    background-color:#1faffe ;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px #1faffe solid;
-    font-weight: 600px;
-    transition: all ease-in .2s;
-    
+.btn-book-now {
+  padding: 10px 25px 10px 25px;
+  border-color: #1faffe;
+  background-color: #1faffe;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px #1faffe solid;
+  font-weight: 600px;
+  transition: all ease-in 0.2s;
 }
 /* Display:flex, para que aparescan, para que se alinen uno despues del otro. , cuenta los divs*/
 
-.btn-book-now:hover{
-    background-color: #fff;
-    color: #1faffe;
-    border: #1faffe 1px solid;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
-
+.btn-book-now:hover {
+  background-color: #fff;
+  color: #1faffe;
+  border: #1faffe 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;
 }
-.hero{
-    background-image: url('../images/hero.avif');
-    height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    border-radius: 30px;
-    /*overflow: hidden;*/
-    position: relative;
-}
-
-.hero-title-container{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    border-radius: 30px;
-    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 30%);
+.hero {
+  background-image: url("../images/hero.avif");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 30px;
+  /*overflow: hidden;*/
+  position: relative;
 }
 
-.hero-title{
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 900;
+.hero-title-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 30%
+  );
 }
 
-.hero-title-white-text{
-    display: block;
-    font-size: 100px;
-    mix-blend-mode: overlay;
+.hero-title {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
 }
 
-.search-block{
-    display: block;
-    position: absolute;
-    background-color: white;
-    width: 80%;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%,-50%);
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    margin-bottom: 50px;
-    border-radius: 15px;
-    gap:20px;
-}
-.search-block-left{
-    flex-basis: 50%;
-    position: relative;
-}
-.search-block-right{
-    flex-basis: 50%;
-    display: grid;
-    gap: 20px; /* Separacion entre div y div*/
-    grid-template-columns: 50% 50%;
-    padding: 20px 0 0 0;
-    
+.hero-title-white-text {
+  display: block;
+  font-size: 100px;
+  mix-blend-mode: overlay;
 }
 
-input[type=text]{
-    border: 1px solid gray;
-    width: 100%;
-    padding: 20px 15px;
-    border-radius: 8px;
-    box-sizing: border-box;
+.search-block {
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  gap: 20px;
+}
+.search-block-left {
+  flex-basis: 50%;
+  position: relative;
+}
+.search-block-right {
+  flex-basis: 50%;
+  display: grid;
+  gap: 20px; /* Separacion entre div y div*/
+  grid-template-columns: 50% 50%;
+  padding: 20px 0 0 0;
 }
 
-input[type=date]{
-    border: 0px;
-    font-weight: 600;
+input[type="text"] {
+  border: 1px solid gray;
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
-select{
-    border:0px;
-    font-weight: 600;
-    width: 80%;
-    padding: 2px 15px;
-    background: transparent;
+
+input[type="date"] {
+  border: 0px;
+  font-weight: 600;
+}
+select {
+  border: 0px;
+  font-weight: 600;
+  width: 80%;
+  padding: 2px 15px;
+  background: transparent;
 }
 /* Background lo hace transparente */
-label{
-    font-size: 12px;
+label {
+  font-size: 12px;
 }
-.search-block-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    flex-basis: 25%;
+.search-block-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-basis: 25%;
 }
 /* Los label son por lo general lineales */
-.search-block label{
-    display: block;
-    color: gray;
+.search-block label {
+  display: block;
+  color: gray;
 }
 
-.boton-buscar{
-    background-color: transparent;
-    border: 0;
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    padding: 20px;
+.boton-buscar {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  padding: 20px;
 }
 
+.section-gallery {
+  margin-top: 60px;
+}
 
+.section-gallery-title h2 {
+  position: relative;
+  font-size: 60px;
+  padding-left: 40px;
+}
 
+.section-gallery-title h2::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 180px;
+  background-color: rgba(255, 248, 45, 0.69);
+  top: 60%;
+  left: 0;
+}
+
+.section-gallery-cards {
+  display: grid;
+  grid-template-areas:
+    "card-01 card-03 card-04 card-06 card-06"
+    "card-01 card-03 card-04 card-06 card-06"
+    "card-02 card-03 card-04 card-07 card-08"
+    "card-02 card-03 card-05 card-07 card-08";
+  gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-01 {
+  grid-area: card-01;
+  background-image: url(../images/argentina.jpg);
+}
+.card-02 {
+  grid-area: card-02;
+  background-image: url(../images/canada.jpg);
+}
+.card-03 {
+  grid-area: card-03;
+  background-image: url(../images/cartagena.jpg);
+}
+.card-04 {
+  grid-area: card-04;
+  background-image: url(../images/espania.jpg);
+}
+.card-05 {
+  grid-area: card-05;
+  background-image: url(../images/inglaterra.jpg);
+}
+.card-06 {
+  grid-area: card-06;
+  background-image: url(../images/mexico.jpg);
+}
+.card-07 {
+  grid-area: card-07;
+  background-image: url(../images/noruega.jpg);
+}
+.card-08 {
+  grid-area: card-08;
+  background-image: url(../images/torrre.jpg);
+}
 
 @media (min-width: 480px) {
-    
 }
 
 @media (min-width: 768px) {
-    body{
-        padding: 20px 30px 30px 30px;
-    }
+  body {
+    padding: 20px 30px 30px 30px;
+  }
 
-    .hero{
-        min-height: 700px;
-    }
+  .hero {
+    min-height: 700px;
+  }
 
-    .hero-title{
-        font-size: 50px;
-    }
+  .hero-title {
+    font-size: 50px;
+  }
 
-    .hero-title-white-text{
-        font-size: 140px;
-    }
+  .hero-title-white-text {
+    font-size: 140px;
+  }
 
-    .search-block{
-        display: flex;
-    }
+  .search-block {
+    display: flex;
+  }
 
-    .search-block-right{
-        flex-basis: 50%;
-        display: flex;
-        gap: 20px; /* Separacion entre div y div*/
-        padding: 0 0 0 0;
-        
-    }
+  .search-block-right {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px; /* Separacion entre div y div*/
+    padding: 0 0 0 0;
+  }
 }
 
 @media (min-width: 1280px) {
+  .hero-title {
+    font-size: 60px;
+  }
 
-    .hero-title{
-        font-size: 60px;
-    }
-
-    .hero-title-white-text{
-        font-size: 180px;
-    }
-
-    
+  .hero-title-white-text {
+    font-size: 180px;
+  }
 }
-
-
-
